@@ -1,0 +1,162 @@
+.nav-item{
+    font-size: 18px;
+    position: relative;
+    color: grey !important;
+}
+.navbar-nav .nav-link::before{
+content: "";
+width: 1px;
+height: 58%;
+position: absolute;
+left: 0;
+background-color: #000;
+
+}
+.heading img{
+    margin-bottom: 20px;
+}
+col {
+    position: relative;
+}
+.col i{
+    position: absolute;
+    top: 10px;
+}
+body {
+    background: #f8f8f8;
+}
+.formsection input {
+  
+    padding: 18px 56px;
+    font-size: 14px;
+}
+.form-btn-search{
+    position: relative;
+}
+
+
+.search-btn {
+    position: absolute;
+    top: -285px;
+    left: 360px;
+    width: 80%;;
+    
+}
+/* foot */
+.foot ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+.foot ul li {
+    list-style-type: none;
+}
+.foot{
+    background-image: url('images/Footer_bg.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 599px;
+    position: relative;
+}
+.navbar-expand-sm .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: -44px;
+}
+/* location */
+.formsection{
+    position: relative;
+
+}
+.formsection input i{
+    position: absolute;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    position: relative;
+    left: -5px;
+    top: -159px;
+    font-size: 50px;
+}
+.owl-carousel .owl-nav button.owl-next {
+    
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    position: relative;
+    top: -151px;
+    right: -5px;
+    font-size: 40px;
+}
+
+
+#show{
+    display: none;
+}
+#add{
+    margin-left: 50px;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color:none !important;
+    outline: 0;
+    box-shadow:none !important;
+    border: none;
+    
+}
+.accordion{
+     --bs-accordion-btn-focus-box-shadow: none; 
+     --bs-accordion-active-color:none; 
+}
+.formsection {
+    position: relative;
+    top: -37px;
+    border: 1px solid gainsboro;
+}
+
+
+@media(max-width:768px){
+    .formsection {
+       top: 0 !important;
+    }
+    .Categories{
+        position: relative;
+        top: 50px;
+    }
+    .local-form {
+        margin-top: 0px !important;
+    }
+}
+/* .form-control {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -291px;
+
+    left: 337px;} */
+    
+    .icon{
+        background: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 30px;
+    align-items: center;
+    transition: all .5s;
+    padding: 7px 0px;
+     color: rgb(126, 45, 59);
+    }
+    .accordion-button:not(.collapsed) {
+        color: var(--bs-accordion-active-color);
+        background-color: var(--bs-accordion);
+        box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    }
+    .accordion-button:not(.collapsed)::after {
+        background-image: var(--bs-accordion-btn-active-icon);
+        transform: var(--bs-accordion-btn-icon-transform);
+    }
+    .local-form {
+        margin-top: -85px;
+    }
+ 

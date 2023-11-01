@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<style>
+
+</style>
+
+<body>
+  <!-- location section -->
+ 
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 ">
+            <form>
+                <div class="row formsection gx-0">
+                    <div class="col bg-white round-start-pill" id="btn1">
+                        <i class="px-3 py-2"><img src="images/location_icon.webp" width="20px" alt=""></i>
+                        <span class="city_name px-5" id="show1">Greater Noida</span>
+                        <p id="add">address</p>
+                        <i class="px-3 py-2"><img src="images/arrow_down_icon.webp" style="  "
+                                width="20px" alt=""></i>
+                    </div>
+                    <div class="col bg-white">
+                        <input type="search" class="form-control border-0 rounded-0  ">
+                        <i class="px-3 py-2"><img src="images/search.webp" width="20px" alt=""></i>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container mt-5 mb-5">
+    <div class="col-md-6 local-form offset-md-3">
+        <div class="row" id="show" style="background-color:rgba(255, 192, 203, 0.215) ;margin-top: -36px;">
+
+            <div class="col-md-4" style="height: 300px; overflow-Y: scroll;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" id="noida">Noida</li>
+                    <li class="list-group-item">Greater Noida</li>
+                    <li class="list-group-item">Gurugram</li>
+                    <li class="list-group-item">Ghaziabad</li>
+                    <li class="list-group-item">Faridabad</li>
+                    <li class="list-group-item">Lucknow</li>
+                    <li class="list-group-item">Jammu</li>
+                    <li class="list-group-item">Simla</li>
+                    <li class="list-group-item">Bareilly</li>
+                    <li class="list-group-item">Mohali</li>
+                </ul>
+            </div>
+
+            <div class="col-md-8 ">
+                <input class="form-control  me-2" type="search" placeholder="Search" aria-label="Search">
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+            </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+            </script>
+                <script>
+                    let show = document.querySelector("#show")
+                    let btn = document.querySelector("#btn1")
+                    let noida = document.querySelector("#noida")
+                    let show1 = document.querySelector("#show1")
+                    let add = document.querySelector("#add")
+                    let change=0
+            
+                    btn.addEventListener("click",function(){
+                        if(change==0){
+                            show.style.display="block"
+                            change=1
+                        }
+                        else{
+                            show.style.display="none"
+                            change=0
+                        }
+            
+                        noida.addEventListener("click",function(){
+                            show1.innerHTML="noida"
+                            add.innerHTML="32-a"
+                            show.style.display="none"
+            
+            
+                        })
+            
+                    })
+            
+            
+                </script>
+            
+</body>
+
+</html>
